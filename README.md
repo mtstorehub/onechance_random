@@ -1,4 +1,4 @@
-# one_chance
+# One Random
 ------
 ![logo](./icon/icon.png)
 
