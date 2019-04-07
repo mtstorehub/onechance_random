@@ -13,10 +13,10 @@ class App extends StatelessWidget {
 class P extends StatefulWidget {
   P({Key k}) : super(key: k);
   @override
-  _PS createState() => _PS();
+  PS createState() => PS();
 }
 
-class _PS extends State<P> {
+class PS extends State<P> {
   bool _iot = false;
   final R = Random();
   TextEditingController npc = TextEditingController(),
@@ -52,10 +52,9 @@ class _PS extends State<P> {
     });
   }
 
-  void PL() {
-    nL = List<int>.generate(int.parse(xic.text) - int.parse(npc.text) + 1,
-        (i) => i + int.parse(npc.text));
-  }
+  void PL() => nL = List<int>.generate(
+      int.parse(xic.text) - int.parse(npc.text) + 1,
+      (i) => i + int.parse(npc.text));
 
   void SC(bool v) {
     setState(() => _iot = v);
@@ -65,6 +64,7 @@ class _PS extends State<P> {
   void RR() {
     npc.text = '';
     xic.text = '';
+    rN = 0;
     setState(() => _iot = false);
   }
 
@@ -130,8 +130,14 @@ class _PS extends State<P> {
         home: Scaffold(
             backgroundColor: Colors.deepPurple[900],
             appBar: AppBar(
-              title: Text('One Chance Random'),
-            ),
+                title: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Icon(Icons.scatter_plot),
+                Text('One Random'),
+                Text(''),
+              ],
+            )),
             body: ListView(
                 padding: EdgeInsets.only(top: 32, left: 20, right: 20),
                 children: [rR, rL, iTF, oTC, gB])));
