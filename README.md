@@ -2,7 +2,7 @@
 ------
 ![logo](./icon/icon.png)
 
-> One Random is a mobile application that can generate random number by minimum and maximum user input. There are two options which are one chance possibility mode and normal mode (random numbers can be repeatedly). One chance possibility is special feature which means that any random numbers can be released at once. So,you don't need to worry about random numbers generated repeatedly. 
+>   One Random is a mobile application that can generate random number by minimum and maximum user input. There are two options which are one chance possibility mode and normal mode (random numbers can be repeatedly). One chance possibility is special feature which means that any random numbers can be released at once. So,you don't need to worry about random numbers generated repeatedly. 
 
 **Note**: This app was initially made for #FlutterCreate, a contest by Google that challenges developers to build a beautiful Flutter app using 5KB or less of Dart code.
 Find out more about #FlutterCreate here: https://flutter.dev/create
